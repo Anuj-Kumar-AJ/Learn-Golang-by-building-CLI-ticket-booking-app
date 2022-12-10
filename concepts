@@ -1,0 +1,85 @@
+1. what is thread, and concept of multi threading-4.59
+2. concurrency issue
+	- go is designed to run on  multi-cores to run multi threaded application  supported by concurrency
+
+
+USE CASES OF GOlang
+ - for performant application
+ - Running scaled and distributed systems
+
+Charestics of Go
+ 1. simple easy to run read and write code and its fast ( readibility of high level language like python and speed of low level leanguage like c++
+
+ 2. Fast build time and  start-ups and run
+ 3. Need less resources to run
+ 3 Compiled language - compiled to binary to run in any envs, and OS
+
+CONCEPTS
+
+1. print("string1", varName, "string2") 
+2. placeholder   %v   and to substitue avalue just write it after ,
+3. newLine \n
+4. If you create an variable and add its value it that moment only(sameline ) , then you dont have to explecetly write type of that variable ,. 
+But if you just decelar the the variable to assign at latter mometn of the code, you have to write the type of that varible when you declear ,--- var varNAme type ---
+
+5. use of := is not work with const and if yoyu explecetly type variable, like 
+ uint, only work with var 
+
+6. in go to use calcuation with multiple constants we can only do if they have same type (uint , int8, int16 ....)
+
+7. Array
+	[size]type{elements}  or  [size]type
+
+8. Loop -- for
+	infinite loop 	 		for{logic}
+	for-each loop	 		for index,val := range lstName {}
+	for loop satisfy condition		for condition {}	
+
+ 9. if-else 
+	if condition { block} 	break statement
+	else	{}
+
+ 10. user input validation
+
+11. switch statement	switch variableName {
+				case "a", "b" "c ": (multiple condition)
+					do Something
+				default: 
+					if none above select run default
+
+12 . function
+		func fnName(varName varType) returnType { do something}
+		func fnName(vName vType) {retType1, retType2, ...} {
+			return R1, R2,... }
+
+13.Scope of variable
+	1. local level variable
+	2. package level variable
+	3. global level ( across all package - capital first leter)
+
+
+14. DataType map in go
+	make( map[KeyDataType]vaDataType)
+ 
+15. struct data type   -- key value pair with mix data type
+
+	type Name struct {
+		firstName	string
+		lastName	String
+		number 		uint
+	}
+
+
+16. concurrency  by sending function to new thread
+
+add go  ------ go funcName----------
+
+
+17. 
+waitGroup --- to stop main function from exitiong , 
+ main htread of main function will wait till the  other thread will complete execution
+
+ sync.waitGroup --- from sync package
+
+
+ 
